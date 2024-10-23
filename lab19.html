@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=
+     , initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <script>
+          var name = 'Joe';
+          function makeUser() {
+               return {
+                    name: 'John',
+                    ref: this
+               };
+          }
+          let user = makeUser();
+          console.log(user.ref.name); // *Return to Joe /ref is this ไป . name เลยเรียกตัวแปรมาเฉยๆ
+     </script>
+</body>
+
+</html>
